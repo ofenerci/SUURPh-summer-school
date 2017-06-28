@@ -1,0 +1,9 @@
+M = dlmread('run.dat');
+tvec = M(:,1);
+vsoma = M(:,2);
+vdend = M(:,3);
+vdend2 = M(:,4);
+isyn = M(:,5);
+isoma = M(:,6);
+subplot(3,2,1); plot(tvec, vsoma);
+subplot(3,2,2); plot(tvec, vdend);
