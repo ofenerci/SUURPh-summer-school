@@ -1,0 +1,19 @@
+// init.hoc created by editing with ModelDB's accession number 3343 rundemo.hoc
+
+chdir("simulationcode")
+
+//----------------------------------------------------------------------------
+//  define a panel to run the different demos
+//----------------------------------------------------------------------------
+
+load_file("stdlib.hoc")
+load_file("stdrun.hoc")
+
+strdef tstr
+
+forall delete_section()
+
+stoprun = 0
+cvode_active(0)
+
+load_file("BAC_firing")
